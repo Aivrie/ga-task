@@ -1,0 +1,62 @@
+/* GENERAL STYLING */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(.static/assets/raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url(.static/assets/Calibri/Calibri\Regular.ttf);
+}
+
+body {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  color: #474747;
+}
+
+.section-heading {
+  font-family: "Raleway";
+  font-size: 1rem;
+}
+
+.section-body {
+  font-family: "Calibri";
+  line-height: 1.5;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* PAGE STYLING */
+#page {
+  margin: 0px 10px;
+}
+
+
+/* MEDIA QUERY FOR LARGE SCREENS */
+@media(min-width:768px) {
+
+  /* PAGE STYLING */
+  #page {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* PLOT STYLING */
+  .observ-one,
+  .observ-two {
+    margin-top: 40px;
+  }
+
+  /* .plot-figure {
+    width: 25%;
+  } */
+}

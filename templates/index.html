@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>GA Task - Plot</title>
+{% endblock %}
+
+
+{% block body %}
+<div id="page">
+    <!-- Introduction -->
+
+    <section class="intro">
+        <div class="section-heading">
+            <h2>Task Introduction</h2>
+        </div>
+
+        <div class="section-body">
+            <p>
+                Given the attached dataset, the task is to create one or more data
+                visualization(s) on a web page. The attached dataset was mined from
+                <b>The NASN 2021 Grand Challenge</b> which asks researchers to
+                explore a dataset and share their insights
+            </p>
+
+            <p>
+                This task was created by the team at the Collaboratorium for Social
+                Media and Online Behavioral Studies. It was prepared as a small
+                technical evaluation for Okeke Obianuju Ivory. This project is
+                representative of a typical task that may be perform at COSMOS and
+                it ensures the lab meets the student's expectation.
+            </p>
+        </div>
+    </section>
+
+    <!-- /Introduction -->
+
+    <!-- Findings -->
+
+    <section class="findings">
+        <div class="section-heading">
+            <h2>Findings from Analysis of the Dataset</h2>
+        </div>
+
+        <div class="section-body">
+            <p>
+                On careful consideration of the dataset, the following analysis
+                below were conducted;
+            </p>
+        </div>
+        <!-- Observation 1 -->
+
+        <section class="observ-one">
+            <div class="section-heading">
+                <h2>Average Follower Count via Twitter Source</h2>
+            </div>
+
+            <div class="section-body">
+                <p>For this analysis, the average follower count of users from each
+                    Twitter source was determined.<br />Selection of relevant Twitter
+                    sources were based on the number of followers from each Twitter
+                    source.</p>
+                <div id="plot1">
+                    <img class="responsive" src="{{ url_for('static', filename='./images/plot1.png')}}" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--  /Observation 1 -->
+
+        <!-- Observation 2 -->
+
+        <section class="observ-two">
+            <div class="section-heading">
+                <h2>Correlation between follower count and anger</h2>
+            </div>
+
+            <div class="section-body">
+                <div class="section-body">
+                    <p>For this analysis, a scatter plot was used to show the correlation
+                        between follower count and the anger emotion. <br />From the
+                        dataset, the anger emotions was described using a range from 1 to
+                        4. The follower count was plotted across the range of anger
+                        levels.</p>
+                    <div id="plot2">
+                        <img class="responsive" src="{{ url_for('static', filename='./images/plot2.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  /Observation 2 -->
+    </section>
+    <!-- /Findings -->
+</div>
+
+{% endblock %}
