@@ -4,12 +4,12 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 
+# @app.route('/')
+# def home():
+#     return render_template('plot.html')
+
 @app.route('/')
 def home():
-    return render_template('plot.html')
-
-@app.route('/plot/')
-def plot():
     
     from bokeh.embed import components
     from bokeh.resources import CDN
